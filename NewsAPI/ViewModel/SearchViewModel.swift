@@ -24,7 +24,7 @@ class SearchViewModel: ObservableObject {
     }
     
     init() {
-        let url = "https://newsapi.org/v2/top-headlines?country=id&category=science&apiKey=31403e958efb44f19100634eb4c502ea"
+        let url = "https://newsapi.org/v2/top-headlines?country=id&category=science&apiKey="
         let session = URLSession(configuration: .default)
         
         session.dataTask(with: URL(string: url)!){ (data, _, error) in
